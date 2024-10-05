@@ -1,0 +1,180 @@
+
+*{margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+body{width:100vw;
+height:100vh;
+font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+background-color:#333;}
+
+nav{
+width:100vw;
+height:20vh;
+color:white;
+display:flex;
+align-items:center;
+justify-content:center;
+font-size:5vh;
+font-weight:bold;
+}
+
+#n{
+color:aqua;
+font-style:italic;
+}
+#author{
+font-size:2vh;
+color:lightgreen;
+}
+main{
+overflow:hidden;
+box-shadow:0 0 10px rgba(0,0,0,.7);
+border-radius:5px;
+width:100vw;
+height:60vh;
+background-color:skyblue;
+display:flex;
+align-items:center;
+flex-wrap:wrap;
+position:relative;
+background-image:url(snl.png);
+background-size: 100vw 60vh;
+}
+
+.cell{
+position:relative;
+font-size:2vh;
+width:10vw;
+
+height:6vh;
+
+
+font-weight:bold;
+align-items:center;
+display:flex;
+justify-content:center;
+}
+
+footer{
+padding:0vw 5vw;
+justify-content:space-between;
+align-items:center;
+display:flex;
+width:100vw;
+height:20vh;
+
+}
+
+
+#snl{
+width:100vw;
+height:60vh;
+position:absolute;
+Filter:contrast(1.2) brightness(1.1) saturate(1.2);
+}
+
+#dice{
+display:flex;
+align-items:center;
+font-weight:bold;
+justify-content:center;
+color:black;
+font-size:6vh;
+border-radius:30px;
+box-shadow:0 0 10px rgba(0,0,0,.7);
+width:8vh;
+height:8vh;
+background-color:white;
+}
+
+.playerhouse{
+
+width:8vh;
+height:8vh;
+position:relative;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+
+}
+
+#player1{
+box-shadow:0 0 10px rgba(0,0,0,.7);
+width:5vh;
+height:5vh;
+background-color:orangered;
+border-radius:50%;}
+
+#player2{
+box-shadow:0 0 10px rgba(0,0,0,1);
+width:5vh;
+height:5vh;
+background-color:aqua;
+border-radius:50%;}
+
+
+.playerhouse h1{
+
+color:white;
+font-size:2vh;
+position:absolute;
+top:-5vw;
+}
+
+.house1{
+animation: flikker ease-in-out 1.5s infinite ;
+}
+
+@keyframes flikker{
+0%{background-color:rgba(255,255,0,.5)}
+10p%{background-color:yellow;}
+}
+
+#red-goti{
+
+box-shadow:0 0 10px rgba(0,0,0,.7);
+
+position:absolute;
+width:3vh;
+height:3vh;
+border-radius:50%;
+background-color:orangered;
+}
+#blue-goti{
+
+
+position:absolute;
+width:3vh;
+height:3vh;
+border-radius:50%;
+background-color:aqua;
+}
+
+.animate-goti {
+  animation: move-goti 0.5s ease-in-out;
+}
+
+@keyframes move-goti {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
+
